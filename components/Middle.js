@@ -33,7 +33,7 @@ router.push(`/search?term=${term}`)
 
     
         <div className="flex flex-col justify-center items-center space-y-4 mt-5 sm:flex-row  sm:space-x-4 ">
-        <button className="bg-gray-100 h-10 w-36 px-5 sm:mt-4 cursor-pointer ">Google Search</button>
+        <button  onClick={search} className="bg-gray-100 h-10 w-36 px-5 sm:mt-4 cursor-pointer ">Google Search</button>
         <button className="bg-gray-100 h-10 px-5 w-40 cursor-pointer">I'm feeling lucky</button>
     </div>
     </div>
