@@ -22,14 +22,14 @@ const Search = ({result}) => {
                 <title>Search result</title>
             </head>
             <Header />
-            <div className="flex  items-center  lg:ml-[90px]  py-2 ">
+            <div className="flex  items-center ml-4 lg:ml-[90px]  py-2 ">
                 
                 <Option Icon={<SearchIcon className="h-5 text-blue-400"/>} title="All"/>
             <Option Icon={<FolderIcon className="h-5"/>} title="News"/>
             <Option Icon={<PlayIcon className="h-5"/>} title="Videos"/>
             <Option Icon={<NewspaperIcon className="h-5"/>} title="Images"/>
             <Option Icon={<BookmarkIcon className="h-5"/>} title="Books"/>
-            <Option Icon={<DotsVerticalIcon className="h-5"/>} title="More"/>    
+            <Option Icon={<DotsVerticalIcon className=" h-5"/>} title="More"/>    
             
      
            

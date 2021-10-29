@@ -1,6 +1,6 @@
 const ResultData = ({result}) => {
     return (
-        <div className="max-w-3xl lg:ml-[120px] ml-10 ">
+        <div className=" lg:max-w-3xl lg:ml-[120px] ml-10 mr-10 text-xs">
             <div className="flex space-x-2">
             <p> About {result.searchInformation?.formattedTotalResults}</p>
             <p> result({result.searchInformation?.formattedSearchTime} seconds)</p>
