@@ -29,7 +29,7 @@ const Search = ({result}) => {
             <Option Icon={<PlayIcon className="h-5"/>} title="Videos"/>
             <Option Icon={<NewspaperIcon className="h-5"/>} title="Images"/>
             <Option Icon={<BookmarkIcon className="h-5"/>} title="Books"/>
-            <Option Icon={<DotsVerticalIcon className=" h-5"/>} title="More"/>    
+            {/* <Option Icon={<DotsVerticalIcon className=" h-5"/>} title="More"/>     */}
             
      
            
@@ -47,7 +47,7 @@ export default Search;
 
 
 export async function getServerSideProps(context){
-    const dummydata= true;
+    const dummydata= false;
     const data = dummydata?Response:await fetch(`https://customsearch.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}`).
     then((res)=>res.json());
 
